@@ -17,6 +17,8 @@ const App = () => {
     return (
       <li>
         {`${employee.first_name} ${employee.last_name}`}
+        <br />
+        {`${employee.email}`}
       </li>
     )
   })

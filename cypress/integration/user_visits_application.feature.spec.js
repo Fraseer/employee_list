@@ -30,7 +30,7 @@ describe("user can visit the application and", () => {
       cy.get("[data-testid=employee-list]")
         .children()
         .first()
-        .should("contain.text", "george.bluth@reqres.in")
+        .should("contain.text", "thomas.bluth@reqres.in")
         .next()
         .should("contain.text", "janet.weaver@reqres.in")
         .next()
