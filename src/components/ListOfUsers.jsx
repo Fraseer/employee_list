@@ -22,7 +22,7 @@ const ListOfUsers = () => {
             {`${employee.first_name} ${employee.last_name}`}
           </Item.Header>
           <Item.Image size="tiny" className="avatar" alt="">
-            <img src={`${employee.avatar}`} />
+            <img src={`${employee.avatar}`} alt=""/>
           </Item.Image>
           <UserModals employee={employee} />
         </Item>
