@@ -16,15 +16,17 @@ const ListOfUsers = () => {
 
   const employeeList = employees.map((employee) => {
     return (
-      <Item className="employee-item">
-        <Item.Header className="name">
-          {`${employee.first_name} ${employee.last_name}`}
-        </Item.Header>
-        <Item.Image className="avatar">
-          <img src={`${employee.avatar}`} />
-        </Item.Image>
-        <UserModals employee={employee} />
-      </Item>
+      <Item.Group>
+        <Item className="employee-item">
+          <Item.Header className="name">
+            {`${employee.first_name} ${employee.last_name}`}
+          </Item.Header>
+          <Item.Image size="tiny" className="avatar" alt="">
+            <img src={`${employee.avatar}`} />
+          </Item.Image>
+          <UserModals employee={employee} />
+        </Item>
+      </Item.Group>
     );
   });
 

@@ -20,18 +20,6 @@ function EmployeeModal({ employee }) {
           <p className="email">Email: {employee.email}</p>
         </Modal.Description>
       </Modal.Content>
-      <Modal.Actions>
-        <Button color="black" onClick={() => setEmployees(false)}>
-          Nope
-        </Button>
-        <Button
-          content="Yep, that's me"
-          labelPosition="right"
-          icon="checkmark"
-          onClick={() => setEmployees(false)}
-          positive
-        />
-      </Modal.Actions>
     </Modal>
   );
 }
